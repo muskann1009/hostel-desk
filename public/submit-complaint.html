@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Submit Complaint — HostelDesk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Hostel<span>Desk</span></a>
+    <input type="checkbox" id="navToggle" class="nav-toggle-cb" />
+    <label class="nav-toggle" for="navToggle" aria-label="Toggle menu">&#9776;</label>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="submit-complaint.html" class="active">Submit Complaint</a>
+      <a href="my-complaints.html">My Complaints</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow-tag">Submit a complaint</span>
+        <h1>What's going wrong?</h1>
+        <p>Fill in as much detail as you can — room number and a clear description help maintenance staff fix it on the first visit.</p>
+      </div>
+
+      <form class="form-card" method="post">
+        <div class="form-note">Submitting opens your email app with these details addressed to the warden's office. You'll get a reference number by reply.</div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="studentName">Your full name</label>
+            <input type="text" id="studentName" name="Name" placeholder="e.g. Aarav Sharma" required minlength="2" />
+          </div>
+          <div class="field">
+            <label for="studentEmail">Your campus email</label>
+            <input type="email" id="studentEmail" name="Email" placeholder="you@campus.edu" required />
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="hostel">Hostel</label>
+            <select id="hostel" name="Hostel" required>
+              <option value="">Select your hostel</option>
+              <option>Ashoka Hostel</option>
+              <option>Gandhi Hostel</option>
+              <option>Nehru Hostel</option>
+              <option>Tagore Hostel</option>
+              <option>Patel Hostel</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="room">Room number</label>
+            <input type="text" id="room" name="Room" placeholder="e.g. 214" required />
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="category">Category</label>
+            <select id="category" name="Category" required>
+              <option value="">Select a category</option>
+              <option>Electrical</option>
+              <option>Plumbing</option>
+              <option>Furniture &amp; fixtures</option>
+              <option>Wi-Fi &amp; internet</option>
+              <option>Mess &amp; food</option>
+              <option>Security</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="priority">Priority</label>
+            <select id="priority" name="Priority" required>
+              <option value="">How urgent is it?</option>
+              <option value="Low">Low — can wait a few days</option>
+              <option value="Medium">Medium — needs attention this week</option>
+              <option value="High">High — affects safety or daily living</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="title">Short title</label>
+          <input type="text" id="title" name="Title" placeholder="e.g. Ceiling fan not working" required minlength="5" />
+          <div class="hint">At least 5 characters.</div>
+        </div>
+
+        <div class="field">
+          <label for="description">Describe the issue</label>
+          <textarea id="description" name="Description" placeholder="What's wrong, since when, and anything staff should know before visiting your room?" required minlength="15"></textarea>
+          <div class="hint">At least 15 characters.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit complaint</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; 2026 HostelDesk — a student services project.</span>
+    <span><a href="about.html">About</a> &middot; <a href="contact.html">Contact</a></span>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

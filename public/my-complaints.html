@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Complaints — HostelDesk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Hostel<span>Desk</span></a>
+    <input type="checkbox" id="navToggle" class="nav-toggle-cb" />
+    <label class="nav-toggle" for="navToggle" aria-label="Toggle menu">&#9776;</label>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="submit-complaint.html">Submit Complaint</a>
+      <a href="my-complaints.html" class="active">My Complaints</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="flex-between" style="margin-bottom: 24px;">
+        <div>
+          <h1 style="margin-bottom:4px;">My Complaints</h1>
+          <p>Example entries grouped by status, the way they'll appear once this is connected to your backend.</p>
+        </div>
+        <a class="btn btn-accent" href="submit-complaint.html">+ New complaint</a>
+      </div>
+
+      <div class="status-tabs">
+
+        <input type="radio" name="statusView" id="tab-open" checked />
+        <label for="tab-open">Open <span class="tab-count">(2)</span></label>
+
+        <input type="radio" name="statusView" id="tab-progress" />
+        <label for="tab-progress">In Progress <span class="tab-count">(1)</span></label>
+
+        <input type="radio" name="statusView" id="tab-resolved" />
+        <label for="tab-resolved">Resolved <span class="tab-count">(2)</span></label>
+
+        <!-- OPEN -->
+        <div class="tab-panel panel-open">
+          <div class="complaint-list">
+            <a class="complaint-row" href="complaint-details.html">
+              <div>
+                <h3>Leaking tap in washroom</h3>
+                <div class="meta">#HD-1039 &middot; Gandhi Hostel, Room 118 &middot; Filed 5 Sep 2026</div>
+              </div>
+              <div class="badges">
+                <span class="badge badge-priority-high">High</span>
+                <span class="badge badge-open">Open</span>
+              </div>
+            </a>
+
+            <a class="complaint-row" href="complaint-details.html">
+              <div>
+                <h3>Cupboard door won't close</h3>
+                <div class="meta">#HD-1044 &middot; Tagore Hostel, Room 27 &middot; Filed 10 Sep 2026</div>
+              </div>
+              <div class="badges">
+                <span class="badge badge-priority-low">Low</span>
+                <span class="badge badge-open">Open</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- IN PROGRESS -->
+        <div class="tab-panel panel-progress">
+          <div class="complaint-list">
+            <a class="complaint-row" href="complaint-details.html">
+              <div>
+                <h3>Ceiling fan not working</h3>
+                <div class="meta">#HD-1042 &middot; Ashoka Hostel, Room 214 &middot; Filed 8 Sep 2026</div>
+              </div>
+              <div class="badges">
+                <span class="badge badge-priority-medium">Medium</span>
+                <span class="badge badge-progress">In Progress</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- RESOLVED -->
+        <div class="tab-panel panel-resolved">
+          <div class="complaint-list">
+            <a class="complaint-row" href="complaint-details.html">
+              <div>
+                <h3>Wi-Fi drops every evening</h3>
+                <div class="meta">#HD-1021 &middot; Nehru Hostel, Room 305 &middot; Filed 29 Aug 2026</div>
+              </div>
+              <div class="badges">
+                <span class="badge badge-priority-low">Low</span>
+                <span class="badge badge-resolved">Resolved</span>
+              </div>
+            </a>
+
+            <a class="complaint-row" href="complaint-details.html">
+              <div>
+                <h3>Geyser not heating water</h3>
+                <div class="meta">#HD-1008 &middot; Patel Hostel, Room 62 &middot; Filed 20 Aug 2026</div>
+              </div>
+              <div class="badges">
+                <span class="badge badge-priority-high">High</span>
+                <span class="badge badge-resolved">Resolved</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; 2026 HostelDesk — a student services project.</span>
+    <span><a href="about.html">About</a> &middot; <a href="contact.html">Contact</a></span>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

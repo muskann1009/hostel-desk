@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login — HostelDesk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Hostel<span>Desk</span></a>
+    <input type="checkbox" id="navToggle" class="nav-toggle-cb" />
+    <label class="nav-toggle" for="navToggle" aria-label="Toggle menu">&#9776;</label>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="submit-complaint.html">Submit Complaint</a>
+      <a href="my-complaints.html">My Complaints</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="active">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div class="card">
+        <div class="login-tabs">
+
+          <input type="radio" name="auth" id="login-tab" checked />
+          <label for="login-tab">Log in</label>
+
+          <input type="radio" name="auth" id="register-tab" />
+          <label for="register-tab">Register</label>
+
+          <div class="login-content">
+            <h2>Welcome Back</h2>
+            <p>Log in to manage your hostel complaints.</p>
+
+            <form>
+              <div class="field">
+                <label for="loginEmail">Campus email</label>
+                <input type="email" id="loginEmail" placeholder="you@campus.edu" required />
+              </div>
+              <div class="field">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Log in</button>
+            </form>
+          </div>
+
+          <div class="register-content">
+            <h2>Create Account</h2>
+            <p>Register to submit and track your hostel complaints.</p>
+
+            <form>
+              <div class="field">
+                <label for="registerName">Full name</label>
+                <input type="text" id="registerName" placeholder="e.g. Aarav Sharma" required />
+              </div>
+              <div class="field">
+                <label for="registerEmail">Campus email</label>
+                <input type="email" id="registerEmail" placeholder="you@campus.edu" required />
+              </div>
+              <div class="field">
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" placeholder="Enter your password" required />
+              </div>
+              <div class="field">
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+          </div>
+
+          <p style="font-size:0.8rem; color:var(--color-ink-faint); margin-top:16px; margin-bottom:0;">
+            This is a demo form. No real account or password is saved — connect a backend to make it functional.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; 2026 HostelDesk — a student services project.</span>
+    <span><a href="about.html">About</a> &middot; <a href="contact.html">Contact</a></span>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

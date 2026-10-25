@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — HostelDesk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Hostel<span>Desk</span></a>
+    <input type="checkbox" id="navToggle" class="nav-toggle-cb" />
+    <label class="nav-toggle" for="navToggle" aria-label="Toggle menu">&#9776;</label>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="submit-complaint.html">Submit Complaint</a>
+      <a href="my-complaints.html">My Complaints</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow-tag">Contact</span>
+        <h1>Reach the warden's office</h1>
+        <p>For anything urgent — a safety issue, flooding, or a lockout — call the numbers below directly rather than waiting on a web form.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-item">
+            <div class="contact-icon">@</div>
+            <div>
+              <h3 class="mt-0" style="font-size:1rem;">Email</h3>
+              <p style="margin:0;">hostelwarden@campus.edu</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#9742;</div>
+            <div>
+              <h3 class="mt-0" style="font-size:1rem;">Phone (urgent issues)</h3>
+              <p style="margin:0;">+91 98765 43210 &middot; 8 AM – 9 PM daily</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#128205;</div>
+            <div>
+              <h3 class="mt-0" style="font-size:1rem;">Office</h3>
+              <p style="margin:0;">Warden's Office, Ground Floor, Ashoka Hostel</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="form-card" style="max-width:none;" method="post" action="mailto:hostelwarden@campus.edu" enctype="text/plain">
+          <div class="form-note">Sending this opens your email app with your message addressed to the warden's office — no account needed.</div>
+
+          <div class="field">
+            <label for="contactName">Your name</label>
+            <input type="text" id="contactName" name="Name" placeholder="Full name" required minlength="2" />
+          </div>
+          <div class="field">
+            <label for="contactEmail">Your email</label>
+            <input type="email" id="contactEmail" name="Email" placeholder="you@campus.edu" required />
+          </div>
+          <div class="field">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="Message" placeholder="What would you like to ask or report?" required minlength="10"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; 2026 HostelDesk — a student services project.</span>
+    <span><a href="about.html">About</a> &middot; <a href="contact.html">Contact</a></span>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

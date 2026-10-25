@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Complaint Details — HostelDesk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Hostel<span>Desk</span></a>
+    <input type="checkbox" id="navToggle" class="nav-toggle-cb" />
+    <label class="nav-toggle" for="navToggle" aria-label="Toggle menu">&#9776;</label>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="submit-complaint.html">Submit Complaint</a>
+      <a href="my-complaints.html" class="active">My Complaints</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+
+      <p><a href="my-complaints.html">&larr; Back to My Complaints</a></p>
+
+      <div class="detail-header">
+        <div>
+          <div class="meta" style="color:var(--color-ink-faint); font-size:0.85rem;">#HD-1042</div>
+          <h1 style="margin-top:4px;">Ceiling fan not working</h1>
+          <div class="badges" style="display:flex; gap:8px;">
+            <span class="badge badge-progress">In Progress</span>
+            <span class="badge badge-priority-medium">Medium</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-grid">
+        <div>
+          <div class="card" style="margin-bottom:20px;">
+            <h3 class="mt-0">Description</h3>
+            <p style="margin:0; color:var(--color-ink);">The ceiling fan in the room has stopped turning on entirely — flipping the switch does nothing, and the regulator has no effect either. It was working fine last week. There's no sound or smell of burning, just no response at all. Room gets quite warm in the afternoon, so any visit before then would help.</p>
+          </div>
+
+          <div class="card">
+            <h3 class="mt-0">Timeline</h3>
+            <ul class="timeline">
+              <li>
+                <div class="t-date">8 Sep 2026, 9:14 AM</div>
+                <div>Complaint filed by student</div>
+              </li>
+              <li>
+                <div class="t-date">8 Sep 2026, 2:40 PM</div>
+                <div>Acknowledged by warden's office</div>
+              </li>
+              <li>
+                <div class="t-date">9 Sep 2026, 11:05 AM</div>
+                <div>Assigned to maintenance — status set to In Progress</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom:20px;">
+            <h3 class="mt-0">Details</h3>
+            <ul class="info-list">
+              <li><span>Hostel</span><span>Ashoka Hostel</span></li>
+              <li><span>Room</span><span>214</span></li>
+              <li><span>Category</span><span>Electrical</span></li>
+              <li><span>Filed by</span><span>Aarav Sharma</span></li>
+              <li><span>Email</span><span>aarav.sharma@campus.edu</span></li>
+              <li><span>Filed on</span><span>8 Sep 2026</span></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="mt-0">Warden &amp; staff actions</h3>
+            <p style="font-size:0.85rem;">Updating status and deleting complaints requires a staff sign-in and a connected backend, so these controls aren't included in this front-end-only template.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; 2026 HostelDesk — a student services project.</span>
+    <span><a href="about.html">About</a> &middot; <a href="contact.html">Contact</a></span>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
